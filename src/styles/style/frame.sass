@@ -1,0 +1,27 @@
+@import "../fonts/fonts"
+
+.frame
+    padding: 144px 0 132px 0
+    // background: #1C1C23
+    & h3
+        max-width: 605px
+        max-height: 96px
+        margin: 0 auto
+        @include Roboto400
+        @include adaptiv-font(24, 12)
+        line-height: 32px
+        text-align: center
+        color: #ECECEC
+    & .person
+        margin-top: 52px
+        & img
+            width: 64px
+            height: 64px
+        & p
+            @include Roboto700
+            @include adaptiv-font(18, 9)
+            line-height: 28px
+            color: #A3A3B1
+            margin-left: 32px
+        & p:last-child
+            @include Roboto500

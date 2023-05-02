@@ -1,0 +1,45 @@
+@import "../fonts/fonts"
+
+.header
+    & .tabs div
+        display: flex
+        justify-content: center
+        max-width: 90px
+        margin: 0 20px
+        padding: 29px 0
+        cursor: pointer
+        &:hover
+            border-bottom: 1px solid white
+        & a
+            @include Roboto400
+            @include adaptiv-font(14, 6)
+            line-height: 20px
+            color: #FAFAFA
+    & .productList, .resourcesList
+        visibility: hidden
+        & p
+            color: #5C53F3
+            margin-top: 8px
+            &:hover
+                color: #847eee
+                transition: .5s
+    & .products:hover ~ .productList, .resources:hover ~ .resourcesList, .productList:hover, .resourcesList:hover
+        visibility: visible
+
+    & .btn 
+        padding: 12px 64px
+        width: 209px
+        height: 48px
+        background: #5C53F3
+        border-radius: 4px
+        cursor: pointer
+        &:hover
+            background: #8781ee
+            transition: .5s
+        & a
+            width: 81px
+            height: 24px
+            @include Roboto700
+            @include adaptiv-font(16, 8)
+            line-height: 24px
+            color: #FAFAFA

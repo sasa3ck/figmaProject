@@ -1,0 +1,64 @@
+@import "../fonts/fonts"
+
+.section
+    min-height: 132px
+    & a
+        @include Roboto400
+        @include adaptiv-font(14, 7)
+        line-height: 20px
+        color: #A3A3B1
+        & p
+            margin: 8px 0
+        &:hover
+            color: #464753
+            transition: .5s
+    & div:first-child a
+        @include Roboto700
+        @include adaptiv-font(14, 7)
+        line-height: 20px
+        color: #ECECEC
+        align-items: center
+        display: flex
+    & div:first-child
+        margin-bottom: 24px
+
+.formContact
+    & h4
+        @include Roboto700
+        @include adaptiv-font(14, 7)
+        line-height: 20px
+        color: #FAFAFA
+    & input
+        width: 100%
+        background: #25252E
+        border-radius: 4px 0px 0px 4px
+        padding: 10px 16px
+        outline: none
+        color: white
+        &::placeholder
+            @include Roboto400
+            @include adaptiv-font(18, 9)
+            line-height: 28px
+            color: #71717E
+    & button
+        @include Roboto700
+        @include adaptiv-font(16, 8)
+        line-height: 24px
+        display: flex
+        align-items: center
+        color: #FAFAFA
+        background: #4D41CB
+        border-radius: 0px 4px 4px 0px
+        padding: 13px 16px
+        &:hover
+            background: #726aca
+            transition: .5s
+    & img
+        width: 32px
+        height: 32px
+        margin: 8px 16px 8px 8px
+    & p
+        @include Roboto700
+        @include adaptiv-font(14, 7)
+        line-height: 20px
+        color: #464753

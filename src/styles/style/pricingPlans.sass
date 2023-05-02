@@ -1,0 +1,99 @@
+@import "../fonts/fonts"
+
+.pricingPlans
+    padding: 96px 48px 128px 48px
+    & h1
+        @include Roboto300
+        @include adaptiv-font(42, 21)
+        line-height: 52px
+        text-align: center
+        color: #ECECEC
+    & h3
+        @include Roboto400
+        @include adaptiv-font(22, 11)
+        line-height: 32px
+        text-align: center
+        color: #A3A3B1
+        margin: 16px 0 32px 0
+    & span
+        @include Roboto400
+        @include adaptiv-font(14, 7)
+        line-height: 20px
+        text-align: center
+        color: #A3A3B1
+    & .switch
+        display: inline-block
+        position: relative
+        width: 44px
+        height: 24px
+        & .switchInput
+            width: 0
+            height: 0
+            opacity: 0
+        & .switchSlider
+            position: absolute
+            cursor: pointer
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background: #7870ca
+            border-radius: 12px
+            transition: .5s
+        & .switchSlider::before
+            content: ''
+            position: absolute
+            cursor: pointer
+            left: 3px
+            bottom: 3px
+            background-color: #ECECEC
+            width: 18px
+            height: 18px
+            border-radius: 50%
+            transition: .5s
+        & .switchInput:checked + .switchSlider
+            background: #4D41CB
+        & .switchInput:checked + .switchSlider::before
+            transform: translateX(18px)
+
+.packageServices
+    & .classTop
+        & p
+            @include Roboto400
+            @include adaptiv-font(24, 12)
+            line-height: 32px
+            color: #A3A3B1
+        & .price
+            @include Roboto400
+            @include adaptiv-font(32, 16)
+            line-height: 40px
+            color: #FAFAFA
+        & .yearOrMonth
+            @include Roboto400
+            @include adaptiv-font(18, 9)
+            line-height: 28px
+            color: #A3A3B1
+    & .classBottom
+        & p
+            @include Roboto400
+            @include adaptiv-font(18, 9)
+            line-height: 28px
+            // color: #ECECEC
+        & span
+            @include Roboto400
+            @include adaptiv-font(18, 9)
+            line-height: 28px
+            color: #C8C4FF
+        & button
+            @include Roboto700
+            @include adaptiv-font(16, 8)
+            line-height: 24px
+            color: #5C53F3
+            padding: 12px 107.5px
+            border: 1px solid #5C53F3
+            border-radius: 4px
+            margin: 14px 0 0 0
+            &:hover
+                transition: .5s
+                color: #807af1
+                border: 1px solid #807af1

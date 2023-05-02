@@ -1,0 +1,47 @@
+@import "../fonts/fonts"
+
+.exFeature
+    & .cart
+        padding: 32px 64px
+        border: 1px solid #25252E
+        border-radius: 8px
+        & h1
+            @include Roboto300
+            @include adaptiv-font(38, 19)
+            line-height: 44px
+            color: #ECECEC
+        & p
+            @include Roboto400
+            @include adaptiv-font(18, 9)
+            line-height: 28px
+            color: #A3A3B1
+            margin: 16px 0
+            max-height: 112px
+            height: 100%
+            max-width: 425px
+            width: 100%
+        & a
+            @include Roboto700
+            @include adaptiv-font(16, 8)
+            line-height: 24px
+            color: #5C53F3
+            padding: 12px 42px 12px 32px
+            border: 1px solid #5C53F3
+            border-radius: 4px
+            &:hover
+                color: #837ef1
+                border: 1px solid #837ef1
+                transition: .5s
+            &:hover span
+                right: 18px
+                transition: .5s
+        & span
+            font-size: 1.5rem
+        & .Edge
+            background: linear-gradient(221.48deg, rgba(255, 255, 255, 0.64) -8.29%, rgba(255, 255, 255, 0) 61.89%), #B9E01E
+            border-radius: 16px
+        & .Store
+            border: 2px solid #FA541C
+            filter: drop-shadow(0px 3px 6px rgba(176, 44, 0, 0.65)) drop-shadow(0px 8px 16px #FA541C)
+            border-radius: 16px
+            padding: 12px 24px 12px 16px
