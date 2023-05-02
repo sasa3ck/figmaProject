@@ -1,4 +1,5 @@
 @import "../fonts/fonts"
+@import "./main"
 
 .desktop
     & .img
@@ -10,14 +11,18 @@
             border-radius: 36px
 
     & h1
-        @include Roboto300
+        // @include Roboto300
+        font-family: Roboto
+        font-weight: 300
         @include adaptiv-font(56, 28)
         line-height: 64px
         text-align: center
         color: #ECECEC
 
     & p
-        @include Roboto400
+        // @include Roboto400
+        font-family: Roboto
+        font-weight: 400
         @include adaptiv-font(22, 11)
         line-height: 32px
         text-align: center
@@ -28,7 +33,9 @@
         width: 100%
         padding: 12px 0
         border-radius: 3px
-        @include Roboto700
+        // @include Roboto700
+        font-family: Roboto
+        font-weight: 700
         @include adaptiv-font(16, 8)
         line-height: 24px
         display: flex
@@ -43,14 +50,16 @@
         max-width: 145px
         width: 100%
         border-radius: 3px
-        @include Roboto700
+        // @include Roboto700
+        font-family: Roboto
+        font-weight: 700
         @include adaptiv-font(16, 8)
         line-height: 24px
         display: flex
         align-items: center
         justify-content: center
-        color: #5C53F3
-        border: 1px solid #5C53F3
+        color: $blue
+        border: 1px solid $blue
         &:hover
             color: #8983f0
             border: 1px solid #8983f0

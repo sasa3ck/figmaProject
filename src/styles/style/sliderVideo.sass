@@ -1,11 +1,12 @@
 @import "../fonts/fonts"
+@import "./main"
 
 .sliderVideo
     & .btns
         padding: 32px 0
     & .btn
         display: inline-flex
-        border: 1px solid #887DFF
+        border: 1px solid $lightBlue
         padding: 14px 16px
         margin-right: 16px
         cursor: pointer
@@ -13,10 +14,12 @@
         & img
             z-index: 1
         & a
-            @include Roboto400
+            // @include Roboto400
+            font-family: Roboto
+            font-weight: 400
             @include adaptiv-font(18, 9)
             line-height: 28px
-            color: #887DFF
+            color: $lightBlue
             margin-left: 8px
             z-index: 1
         &::before
@@ -41,7 +44,6 @@
         width: 100%
         & h3
             font-family: 'Roboto'
-            font-style: normal
             font-weight: 400
             font-size: 32px
             line-height: 40px
@@ -49,14 +51,12 @@
             margin: 16px 0
         & h6
             font-family: 'Roboto'
-            font-style: normal
             font-weight: 400
             font-size: 18px
             line-height: 28px
             color: #A3A3B1
         & p
             font-family: 'Roboto'
-            font-style: normal
             font-weight: 400
             font-size: 14px
             line-height: 20px

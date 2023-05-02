@@ -1,16 +1,21 @@
 @import "../fonts/fonts"
+@import "./main"
 
 .preHeader
     & div:first-child
         border-top: 1px solid #25252E
     & .copyRight
         & p
-            @include Roboto400
+            // @include Roboto400
+            font-family: Roboto
+            font-weight: 400
             @include adaptiv-font(14, 7)
             line-height: 20px
             color: #464753
         & a
-            @include Roboto400
+            // @include Roboto400
+            font-family: Roboto
+            font-weight: 400
             @include adaptiv-font(14, 7)
             line-height: 20px
             color: #A3A3B1
