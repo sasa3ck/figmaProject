@@ -3,10 +3,10 @@ import { sign } from "../img/index";
 
 const Desktop = () => {
   return (
-    <div className="desktop max-w-[1280px] mx-auto">
-      <div className="flex justify-center items-center img">
+    <div className="desktop">
+      <div className="img">
         <div className="bxImg">
-          <img src={sign} alt="sign" />
+          <img src={sign} />
         </div>
       </div>
       <div>
@@ -18,8 +18,8 @@ const Desktop = () => {
       <div>
         <p>The all-in-one suite for web scraping and web automation.</p>
       </div>
-      <div className="flex justify-center mb-32">
-        <a href="#" className="download mr-8">
+      <div className="btns">
+        <a href="#" className="download">
           Download now
         </a>
         <a href="#" className="prices">

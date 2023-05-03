@@ -4,7 +4,7 @@ import SilverVideoBtn from "./myComponents/SilverVideoBtn";
 
 const SliderVideo = () => {
   return (
-    <div className="sliderVideo max-w-[1280px] mx-auto">
+    <div className="sliderVideo">
       <div className="btns">
         <SilverVideoBtn text="Code editor" img={codeEditor} />
         <SilverVideoBtn text="Browser" img={codeEditor} />
@@ -13,8 +13,8 @@ const SliderVideo = () => {
         <SilverVideoBtn text="Logs" img={codeEditor} />
         <SilverVideoBtn text="Storage" img={codeEditor} />
       </div>
-      <div className="flex justify-around mt-8 mb-16">
-        <div className="text flex flex-col justify-between">
+      <div className="infoPanel">
+        <div className="text">
           <div>
             <h3>True headless Chrome browser with integrated ad-blocker</h3>
             <h6>
@@ -26,21 +26,21 @@ const SliderVideo = () => {
           </div>
           <div>
             <p>Replaces:</p>
-            <div className="flex mt-3">
+            <div className="social">
               <a href="#">
-                <img src={vs} alt="vs" />
+                <img src={vs} />
               </a>
               <a href="#">
-                <img src={react} alt="react" />
+                <img src={react} />
               </a>
               <a href="#">
-                <img src={z} alt="z" />
+                <img src={z} />
               </a>
             </div>
           </div>
         </div>
         <div className="diagram">
-          <img src={diagram} alt="diagram" />
+          <img src={diagram} />
         </div>
       </div>
     </div>

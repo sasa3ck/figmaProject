@@ -3,16 +3,16 @@ import { apple, win, linux, OS_1, OS_2, OS_3 } from "../img/index";
 
 const DesktopOS = () => {
   return (
-    <div className="bg-[#2D2763]">
-      <div className="desktopOS max-w-[1280px] mx-auto">
-        <div className="wrapperOS flex flex-col items-center relative">
-          <div className="absolute top-0 left-0">
+    <div className="wrapperDesktopOS">
+      <div className="desktopOS">
+        <div className="wrapperOS">
+          <div className="imgPartOne">
             <img src={OS_1} />
           </div>
-          <div className="absolute left-0 bottom-0">
+          <div className="imgPartTwo">
             <img src={OS_2} />
           </div>
-          <div className="absolute right-0 top-0">
+          <div className="imgPartThree">
             <img src={OS_3} />
           </div>
           <h1>Available for major desktop OS</h1>
@@ -21,7 +21,7 @@ const DesktopOS = () => {
             <br /> and start creating crawling and automation bots surprisingly
             fast
           </h3>
-          <div className="flex space-x-8">
+          <div className="btns">
             <div className="panelBtn">
               <img src={apple} />
               <a href="#">MacOs High Sierra +</a>

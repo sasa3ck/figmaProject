@@ -1,11 +1,31 @@
 @import "../fonts/fonts"
 @import "./main"
 
+.wrapperDesktopOS
+    background: #2D2763
+
 .desktopOS
+    max-width: 1280px
+    margin: 0 auto
     & .wrapperOS
         padding: 95px 0 74px 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        position: relative
+    & .imgPartOne
+        position: absolute
+        top: 0
+        left: 0
+    & .imgPartTwo
+        position: absolute
+        bottom: 0
+        left: 0
+    & .imgPartThree
+        position: absolute
+        top: 0
+        right: 0
     & h1
-        // @include Roboto300
         font-family: Roboto
         font-weight: 300
         @include adaptiv-font(42, 21)
@@ -14,7 +34,6 @@
         color: $cream
         z-index: 1
     & h3
-        // @include Roboto400
         font-family: Roboto
         font-weight: 400
         @include adaptiv-font(18, 9)
@@ -27,25 +46,27 @@
         display: flex
         align-items: center
         cursor: pointer
-        // @include Roboto400
         font-family: Roboto
         font-weight: 400
         @include adaptiv-font(14, 7)
         line-height: 20px
-        color: #887DFF
         border: 1px solid #887DFF
         border-radius: 32px
         padding: 18px 24px
         z-index: 1
+        margin: 0 16px
+        & a
+            color: #887DFF
         & img
             margin-right: 19px
         &:hover
             font-size: 16px
             transition: .5s
+    & .btns
+        display: flex
     & .downloadBtn
         cursor: pointer
         margin-top: 56px
-        // @include Roboto700
         font-family: Roboto
         font-weight: 700
         @include adaptiv-font(16, 8)

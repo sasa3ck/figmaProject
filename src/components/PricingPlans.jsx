@@ -14,15 +14,15 @@ import {
 const PricingPlans = observer(() => {
   console.log(SwitchSlider.yearOrMonth);
   return (
-    <div className="bg-[#1C1C23]">
-      <div className="pricingPlans max-w-[1280px] mx-auto">
+    <div className="wrapperPricingPlans">
+      <div className="pricingPlans">
         <div>
           <h1>Pricing plans</h1>
           <h3>Transparent pricing. No hidden fees.</h3>
-          <div className="flex justify-center items-center">
+          <div className="preSwitch">
             <span>Monthly</span>
             <div>
-              <label className="switch mx-2">
+              <label className="switch">
                 <input type="checkbox" className="switchInput" />
                 <span
                   onClick={() => SwitchSlider.changeYearOrMonth()}
@@ -33,26 +33,26 @@ const PricingPlans = observer(() => {
             <span>Annually</span>
           </div>
         </div>
-        <div className="flex">
+        <div className="package">
           <div
             style={{
               display: SwitchSlider.yearOrMonth ? "none" : "flex",
             }}
-            className="packageServices mt-8 flex items-center space-x-2 switchYear"
+            className="packageServices switchYear"
           >
             <PackageServices
-              classTop="classTop w-[386px] h-[120px] bg-[#2F2F3D] px-16 pt-8 pb-4 rounded-tl-2xl rounded-tr-2xl"
-              classBottom="classBottom w-[386px] h-[644px] bg-[#25252E] rounded-bl-2xl rounded-br-2xl pt-4 px-11"
+              classTop="classTopOne"
+              classBottom="classBottomOne"
               params={blockOne}
             />
             <PackageServices
-              classTop="classTop w-[396px] h-[144px] bg-[#4D41CB] px-16 pt-10 pb-8 rounded-tl-2xl rounded-tr-2xl"
-              classBottom="classBottom w-[396px] h-[668px] bg-[#2F2F3D] rounded-bl-2xl rounded-br-2xl py-8 px-12"
+              classTop="classTopTwo"
+              classBottom="classBottomTwo"
               params={blockTwo}
             />
             <PackageServices
-              classTop="classTop w-[386px] h-[120px] bg-[#2D2763] px-16 pt-8 pb-4 rounded-tl-2xl rounded-tr-2xl"
-              classBottom="classBottom w-[386px] h-[644px] bg-[#25252E] rounded-bl-2xl rounded-br-2xl pt-4 px-11"
+              classTop="classTopThree"
+              classBottom="classBottomThree"
               params={blockThree}
             />
           </div>
@@ -63,18 +63,18 @@ const PricingPlans = observer(() => {
             className="packageServices mt-8 flex items-center space-x-2 switchMonth"
           >
             <PackageServices
-              classTop="classTop w-[386px] h-[120px] bg-[#2F2F3D] px-16 pt-8 pb-4 rounded-tl-2xl rounded-tr-2xl"
-              classBottom="classBottom w-[386px] h-[644px] bg-[#25252E] rounded-bl-2xl rounded-br-2xl pt-4 px-11"
+              classTop="classTopOne"
+              classBottom="classBottomOne"
               params={blockFour}
             />
             <PackageServices
-              classTop="classTop w-[396px] h-[144px] bg-[#4D41CB] px-16 pt-10 pb-8 rounded-tl-2xl rounded-tr-2xl"
-              classBottom="classBottom w-[396px] h-[668px] bg-[#2F2F3D] rounded-bl-2xl rounded-br-2xl py-8 px-12"
+              classTop="classTopTwo"
+              classBottom="classBottomTwo"
               params={blockSix}
             />
             <PackageServices
-              classTop="classTop w-[386px] h-[120px] bg-[#2D2763] px-16 pt-8 pb-4 rounded-tl-2xl rounded-tr-2xl"
-              classBottom="classBottom w-[386px] h-[644px] bg-[#25252E] rounded-bl-2xl rounded-br-2xl pt-4 px-11"
+              classTop="classTopThree"
+              classBottom="classBottomThree"
               params={blockSeven}
             />
           </div>

@@ -10,7 +10,7 @@ import TextColCard from "./myComponents/TextColCard";
 
 const TextCol = () => {
   return (
-    <div className="textCol max-w-[1280px] mx-auto grid grid-cols-3 gap-10">
+    <div className="textCol">
       <TextColCard
         img={IconWebdriver}
         h3="Webdriver"

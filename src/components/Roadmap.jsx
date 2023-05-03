@@ -4,7 +4,7 @@ import { timer, dollar, heart } from "../img/index";
 
 const Roadmap = () => {
   return (
-    <div className="roadmap max-w-[1280px] mx-auto">
+    <div className="roadmap">
       <div className="title">
         <h1>What’s on our roadmap?</h1>
         <h2>
@@ -12,7 +12,7 @@ const Roadmap = () => {
           their main web automation platform
         </h2>
       </div>
-      <div className="grid grid-cols-3 gap-14 mx-5">
+      <div className="cards">
         <TextColCard
           img={timer}
           h3="Time tracking"
@@ -29,9 +29,9 @@ const Roadmap = () => {
           p="Nibh nisl condimentum id venenatis a condimentum vitae sapien."
         />
       </div>
-      <div className="notify flex justify-between">
+      <div className="notify">
         <p>Let me know when the new features will be implemented</p>
-        <form className="flex">
+        <form>
           <input type="text" placeholder="My email" />
           <button>Notify me</button>
         </form>

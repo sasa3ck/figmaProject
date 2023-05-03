@@ -3,9 +3,9 @@ import { miniLogo, okey } from "../img/index";
 
 const Footer = () => {
   return (
-    <div className="footer max-w-[1280px] mx-auto">
-      <div className="flex mx-12 my-20 justify-between">
-        <div className="grid grid-cols-5 gap-14">
+    <footer>
+      <div className="footer">
+        <div className="wrapperFooter">
           <div className="section">
             <div>
               <a href="#">
@@ -94,13 +94,13 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="formContact max-w-[385px] w-full">
+        <div className="formContact">
           <h4>Tell me about new Crawless features as they come out</h4>
-          <form className="flex pt-6 pb-2">
+          <form>
             <input type="text" placeholder="My email" />
             <button type="submit">Subscribe</button>
           </form>
-          <div className="flex items-center max-w-[270px] w-full">
+          <div className="btn">
             <img src={okey} />
             <p>
               By submitting this form, I agree to the Crawlerss Privacy Policy
@@ -108,7 +108,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

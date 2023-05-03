@@ -2,10 +2,17 @@
 @import "./main"
 
 .roadmap
+    max-width: 1280px
+    margin: 0 auto
     padding: 64px
     & .title
         max-width: 670px
         margin: 128px auto 70px auto
+    & .cards
+        display: grid
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+        gap: 56px
+        margin: 20px 0
     & h1
         font-family: 'Roboto'
         font-style: normal
@@ -53,6 +60,10 @@
         border-radius: 8px
         background: #1C1C23
         margin: 70px auto 128px auto
+        display: flex
+        justify-content: space-between
+        & form
+            display: flex
         & p
             font-family: 'Roboto'
             font-style: normal

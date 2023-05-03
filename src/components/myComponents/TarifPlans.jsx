@@ -5,15 +5,12 @@ const TarifPlans = (props) => {
   let color = props.active ? "#ECECEC" : "#71717E";
 
   return (
-    <div className="flex justify-between py-[1px] items-center">
-      <p className="flex py-[6px]" style={{ color: color }}>
-        <img
-          src={props.active ? planPlus : planMinus}
-          className="planPlus mr-2"
-        />
+    <div className="tarif">
+      <p style={{ color: color }}>
+        <img src={props.active ? planPlus : planMinus} />
         {props.name}
       </p>
-      <span>{props.active ? props.tarif : ''}</span>
+      <span>{props.active ? props.tarif : ""}</span>
     </div>
   );
 };

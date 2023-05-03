@@ -2,6 +2,12 @@
 @import "./main"
 
 .sliderVideo
+    max-width: 1280px
+    margin: 0 auto
+    & .infoPanel
+        display: flex
+        justify-content: space-around
+        margin: 32px 0 64px 0
     & .btns
         padding: 32px 0
     & .btn
@@ -14,7 +20,6 @@
         & img
             z-index: 1
         & a
-            // @include Roboto400
             font-family: Roboto
             font-weight: 400
             @include adaptiv-font(18, 9)
@@ -42,6 +47,9 @@
     & .text
         max-width: 352px
         width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
         & h3
             font-family: 'Roboto'
             font-weight: 400
@@ -63,6 +71,9 @@
             color: #71717E
         & a
             margin-right: 16px
+    & .social
+        display: flex
+        margin-top: 12px
     & .diagram
         width: 768px
         height: 566px

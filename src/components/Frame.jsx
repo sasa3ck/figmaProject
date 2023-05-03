@@ -3,8 +3,8 @@ import { face } from "../img/index";
 
 const Frame = () => {
   return (
-    <div className="bg-[#1C1C23]">
-      <div className="frame max-w-[1280px] mx-auto">
+    <div className="wrapperFrame">
+      <div className="frame">
         <div>
           <h3>
             “Crawless serves as the main hub for ready-to-code Photoshop files
@@ -12,9 +12,9 @@ const Frame = () => {
             it’s in Avocode.”
           </h3>
         </div>
-        <div className="person flex justify-center items-center">
+        <div className="person">
           <div>
-            <img src={face} alt="face" />
+            <img src={face} />
           </div>
           <div>
             <p>Igor Masliansky</p>

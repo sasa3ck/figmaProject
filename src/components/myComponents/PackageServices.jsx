@@ -3,11 +3,11 @@ import TarifPlans from "./TarifPlans";
 
 const PackageServices = (props) => {
   return (
-    <div>
+    <div className="wrapperPackage">
       <div className={props.classTop}>
         <p>{props.params.name}</p>
-        <div className="flex items-center">
-          <div className="price mr-1">{props.params.price}</div>
+        <div className="name">
+          <div className="price">{props.params.price}</div>
           <div className="yearOrMonth">{props.params.yearOrMonth}</div>
         </div>
       </div>
@@ -47,7 +47,7 @@ const PackageServices = (props) => {
             tarif="3 free"
           />
         </div>
-        <div className="flex justify-center items-center">
+        <div className="btn">
           <button
             style={{ background: props.params.bg, color: props.params.color }}
           >

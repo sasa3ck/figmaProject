@@ -2,6 +2,11 @@
 @import "./main"
 
 .textCol
+    max-width: 1280px
+    margin: 0 auto
+    display: grid
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+    gap: 40px
     padding: 64px
     & .card
         padding: 20px

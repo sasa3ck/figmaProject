@@ -2,28 +2,43 @@
 @import "./main"
 
 .preHeader
+    max-width: 1280px
+    margin: 0 auto
+    & .wrapper
+        display: flex
+        justify-content: space-between
+        margin: 48px 0
     & div:first-child
         border-top: 1px solid #25252E
     & .copyRight
+        display: flex
+        align-items: center
+        & .privacySecurity
+            display: flex
+            align-items: center
         & p
-            // @include Roboto400
             font-family: Roboto
             font-weight: 400
             @include adaptiv-font(14, 7)
             line-height: 20px
             color: #464753
+            margin-right: 32px
         & a
-            // @include Roboto400
             font-family: Roboto
             font-weight: 400
             @include adaptiv-font(14, 7)
             line-height: 20px
             color: #A3A3B1
-    & .icons a
-        margin: 24px 0
-        &:hover
-            filter: invert(57%) sepia(7%) saturate(6414%) hue-rotate(207deg) brightness(83%) contrast(88%)
-            transition: .2s
-        & img
-            width: 32px
-            height: 32px
+        & .point
+            margin: 0 16px
+            color: #464753
+    & .icons 
+        display: flex
+        & a
+            margin: 24px 16px
+            &:hover
+                filter: invert(57%) sepia(7%) saturate(6414%) hue-rotate(207deg) brightness(83%) contrast(88%)
+                transition: .2s
+            & img
+                width: 32px
+                height: 32px

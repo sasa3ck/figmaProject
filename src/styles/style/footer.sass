@@ -1,10 +1,22 @@
 @import "../fonts/fonts"
 @import "./main"
 
+footer
+    max-width: 1280px
+    margin: 0 auto
+
+.footer
+    display: flex
+    margin: 80px 48px
+    justify-content: space-between
+    & .wrapperFooter
+        display: grid
+        grid-template-columns: repeat(5, minmax(0, 1fr))
+        gap: 56px
+
 .section
     min-height: 132px
     & a
-        // @include Roboto400
         font-family: Roboto
         font-weight: 400
         @include adaptiv-font(14, 7)
@@ -16,7 +28,6 @@
             color: #464753
             transition: .5s
     & div:first-child a
-        // @include Roboto700
         font-family: Roboto
         font-weight: 700
         @include adaptiv-font(14, 7)
@@ -28,8 +39,17 @@
         margin-bottom: 24px
 
 .formContact
+    max-width: 385px
+    width: 100%
+    & form
+        display: flex
+        padding: 24px 0 8px 0
+    & .btn
+        display: flex
+        align-items: center
+        max-width: 270px
+        width: 100%
     & h4
-        // @include Roboto700
         font-family: Roboto
         font-weight: 700
         @include adaptiv-font(14, 7)
@@ -43,14 +63,12 @@
         outline: none
         color: white
         &::placeholder
-            // @include Roboto400
             font-family: Roboto
             font-weight: 400
             @include adaptiv-font(18, 9)
             line-height: 28px
             color: #71717E
     & button
-        // @include Roboto700
         font-family: Roboto
         font-weight: 700
         @include adaptiv-font(16, 8)
@@ -69,7 +87,6 @@
         height: 32px
         margin: 8px 16px 8px 8px
     & p
-        // @include Roboto700
         font-family: Roboto
         font-weight: 700
         @include adaptiv-font(14, 7)

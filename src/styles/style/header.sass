@@ -2,28 +2,66 @@
 @import "./main"
 
 .header
-    & .tabs div
-        display: flex
-        justify-content: center
-        max-width: 90px
-        margin: 0 20px
-        padding: 29px 0
+    max-width: 1200px
+    height: 80px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    & .logo
+        max-width: 125px
+        max-height: 32px
         cursor: pointer
-        &:hover
-            border-bottom: 1px solid white
+    & .arrow
+        margin-left: 8px
+    & .tabs
+        display: flex
+        align-items: center
+        height: 100%
+        text-align: center
+        position: relative
+        & div
+            display: flex
+            justify-content: center
+            max-width: 90px
+            margin: 0 20px
+            padding: 29px 0
+            cursor: pointer
+            &:hover
+                border-bottom: 1px solid white
         & a
-            // @include Roboto400
             font-family: Roboto
             font-weight: 400
             @include adaptiv-font(14, 6)
             line-height: 20px
             color: $cream
+    & .productList
+        position: absolute
+        background: #1C1C23
+        left: 105px
+        top: 80px
+        min-width: 130px
+        z-index: 1
+        border-radius: 15px
+        padding: 6px 8px
+    & .resourcesList
+        position: absolute
+        background: #1C1C23
+        left: 128px
+        top: 80px
+        min-width: 300px
+        z-index: 1
+        border-radius: 15px
+        padding: 6px 8px
+        display: grid
+        grid-template-columns: repeat(2, minmax(0, 1fr))
     & .productList, .resourcesList
         visibility: hidden
         & p
             color: $blue
-            margin-top: 8px
-            &:hover
+            padding: 4px 0
+            margin: 0 !important
+            & a:hover
                 color: #847eee
                 transition: .5s
     & .products:hover ~ .productList, .resources:hover ~ .resourcesList, .productList:hover, .resourcesList:hover

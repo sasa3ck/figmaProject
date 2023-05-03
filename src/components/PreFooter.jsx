@@ -3,19 +3,19 @@ import { facebook, twitter, instagram, boxIcon, linkedin } from "../img/index";
 
 const PreFooter = () => {
   return (
-    <div className="preHeader max-w-[1280px] mx-auto">
-      <div className="flex justify-between mx-12">
-        <div className="copyRight flex items-center">
-          <p className="mr-8">Copyright © 2019—2020 Crawless</p>
-          <div className="flex items-center">
+    <div className="preHeader">
+      <div className="wrapper">
+        <div className="copyRight">
+          <p>Copyright © 2019—2020 Crawless</p>
+          <div className="privacySecurity">
             <a href="#">Legal</a>
-            <div className="mx-4 text-[#464753]">&#x2022;</div>
+            <div className="point">&#x2022;</div>
             <a href="#">Privacy & Security</a>
-            <div className="mx-4 text-[#464753]">&#x2022;</div>
+            <div className="point">&#x2022;</div>
             <a href="#">Cookies</a>
           </div>
         </div>
-        <div className="icons flex space-x-6">
+        <div className="icons">
           <a href="#">
             <img src={facebook} />
           </a>
